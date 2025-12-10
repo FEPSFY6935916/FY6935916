@@ -53,6 +53,64 @@ table {
     <p class="ex1">
         This article explores how pulsars—rapidly rotating neutron stars discovered in 1967—can serve as some of the most precise natural clocks in the universe. Because their radio pulses arrive with remarkable regularity, pulsars offer scientists a unique way to measure time far beyond the accuracy of traditional astronomical methods. In this article, we will discuss what pulsars are, how their signals are detected, and why their stability makes them valuable for timekeeping. We will also examine how researchers create pulsar timing models, what factors can affect their precision, and how these models are used in fields such as astrophysics, gravitational-wave research, and future spacecraft navigation. Drawing from well-known scientific sources, including Pulsar Astronomy by Lyne & Graham-Smith and international pulsar timing array studies, this introduction sets the stage for understanding how these extraordinary stellar remnants could help shape the future of time measurement.
          </p>
+    <h3 id="Analysis_and_discussion">Analysis and discussion</h3>
+  <p class="ex1">Pulsar timing is one of the most precise measurement techniques in astrophysics, and its value depends on the ability to track pulse arrival times, or Times of Arrival (ToAs), over extremely long time intervals. These intervals can range from a few hours to several decades. The fundamental idea is that each pulsar emits pulses at a very stable rate, and by measuring when these pulses reach Earth, astronomers can construct a highly accurate timing model. However, before these ToAs can be analysed, they must be transferred into a reference frame that does not rotate or move relative to the solar system. This is why ToAs are usually converted to the solar-system barycentre. By removing the effects of Earth’s rotation and orbit, the measurements become much more consistent and reliable.
+
+Another complication is the interstellar medium, which contains ionised gas. This gas causes radio-frequency dispersion, meaning lower-frequency waves travel more slowly than higher-frequency waves. To correct for this, pulsars are observed in different frequency bands. By comparing the arrival times in each band, astronomers can estimate how much dispersion has occurred and remove its effect. After applying these corrections, a predicted arrival time for each pulse can be generated using a model of the pulsar’s properties. These include its position in space (astrometric parameters), its rotation period and slowdown rate, and, if it has a companion star, its binary orbital parameters.
+
+The difference between the observed arrival time and the predicted one is called the “timing residual.” These residuals contain valuable information. If the model is perfect and all known factors are correctly applied, the residuals should be nearly zero. However, systematic patterns or long-term trends in the residuals indicate that something is missing or incorrect in the model. For example, an error in the pulsar’s position will create a sinusoidal pattern over the course of a year, while a change in the orbital period of a binary system will produce a steadily increasing or decreasing trend. By fitting these signatures with statistical methods such as least-squares fitting, astronomers can refine the model parameters and even discover previously unknown physical effects.
+
+One of the most significant outcomes of long-term pulsar timing is the measurement of pulsar spin-down. As pulsars age, they slowly lose rotational energy, causing their rotation period to increase. The spin-down rate gives insight into the physical mechanisms responsible for this slowdown. Under the assumption that pulsars slow down due to magnetic-dipole radiation, a simple relationship can be derived for the surface magnetic field strength. This magnetic field, which can be extraordinarily large (up to 10¹² Gauss), is a key factor in how the pulsar evolves. Additionally, the characteristic age of the pulsar can be estimated from its period and period derivative. This age represents how long it has likely been since the pulsar formed, assuming a constant braking mechanism.
+
+A helpful way to visualise the evolution of pulsars is through a plot of period versus period derivative. Different categories of pulsars occupy different regions of this diagram. Millisecond pulsars (MSPs), which have been spun up by accretion from a companion star, appear in the lower-left corner because they rotate extremely fast and have very low spin-down rates. Magnetars, which are known for their extremely strong magnetic fields and long rotation periods, appear in the upper-right. Young pulsars tend to occupy the upper-middle region, and their high rotation energies make them detectable across multiple wavelengths. Transitional objects, such as rotating radio transients (RRATs) and isolated neutron stars, populate other regions of the diagram.
+
+Not all pulsars slow down smoothly. Many young pulsars experience sudden spin-up events called “glitches.” A glitch is an abrupt increase in rotation frequency, which can be very small or, in some cases, quite significant. After a glitch, the pulsar often exhibits a recovery phase where the rotation gradually returns toward the pre-glitch behaviour. This recovery may involve exponential relaxation followed by a more linear decay. Glitches are believed to be caused by interactions between the pulsar’s crust and its superfluid interior, but the exact mechanisms remain an active area of research. Because glitches temporarily change a pulsar’s rotation rate, they complicate long-term timing studies and must be accounted for when refining timing models.
+
+Another important parameter in pulsar timing is the braking index. The braking index reflects how the pulsar’s rotation slows over time and indicates what mechanisms are responsible for this braking. For example, pure magnetic-dipole braking predicts a braking index of 3, whereas gravitational wave emission would produce a braking index of 5. In reality, very few pulsars have measurable braking indices because timing irregularities make it challenging to determine the second derivative of the rotation frequency. Among those that have been measured, most braking indices fall between 2 and 3, suggesting that additional braking mechanisms such as stellar winds are present.
+
+Binary pulsars offer a unique opportunity to test theories of gravity. The famous system PSR B1913+16, also known as the Hulse–Taylor binary pulsar, provided the first indirect evidence for gravitational waves. Precise timing measurements detected changes in the orbital period consistent with the emission of gravitational radiation predicted by general relativity (GR). Over several decades, the observed orbital decay has matched GR’s predictions to within a fraction of a percent. Another remarkable system is the Double Pulsar, PSR J0737–3039A/B, where both stars are neutron stars observable as pulsars. This system allows for even more stringent tests, confirming GR’s predictions with extremely high precision.
+
+Although GR has been very successful, pulsars also offer ways to test alternative theories of gravity. For example, some theories propose that objects with different levels of gravitational binding energy fall at different rates, violating the Strong Equivalence Principle. Binary pulsars with white dwarf companions can test this principle by examining orbital eccentricities. Other alternative theories predict dipolar gravitational radiation, which can also be tested using pulsar–white dwarf systems.
+
+Pulsar timing arrays (PTAs) extend pulsar timing into a galaxy-scale gravitational wave detector. By monitoring many millisecond pulsars across the sky, astronomers can search for correlated timing variations caused by low-frequency gravitational waves. These waves are expected to come from supermassive black hole binaries in distant galaxies. Although no detection has been confirmed yet, PTAs have placed strong limits on the strength of the gravitational wave background. The most sensitive arrays, including the European Pulsar Timing Array, NANOGrav, and the Parkes Pulsar Timing Array, have accumulated decades of high-precision data. Future instruments such as the Square Kilometre Array are expected to greatly increase detection sensitivity.
+
+Overall, pulsar timing provides a powerful method for studying neutron star physics, testing gravitational theories, exploring the interstellar medium, and potentially detecting gravitational waves. The long-term stability and predictability of pulsar signals make them excellent cosmic clocks, while deviations from predicted timing carry information about some of the most extreme environments in the universe.</p>
+<h3 id="BrakingIndex">Braking Index Equation</h3>
+
+<p class="ex1">
+    The braking index describes how the rotation of a pulsar slows down over time. 
+    It is defined using the pulsar’s spin frequency \( \nu \), its first derivative \( \dot{\nu} \), 
+    and its second derivative \( \ddot{\nu} \). The braking index helps identify the physical 
+    mechanisms responsible for the pulsar’s energy loss, such as magnetic-dipole radiation, 
+    stellar winds, or gravitational wave emission.
+</p>
+
+<p class="ex1">
+   <h3 id="BrakingIndex">Braking Index Equation</h3>
+</p>
+
+<math>
+    <mi>n</mi>
+    <mo>=</mo>
+    <mfrac>
+        <mrow>
+            <mi>&#x03BD;</mi>
+            <mo>&#x2062;</mo>
+            <msup>
+                <mi>&#x03BD;</mi>
+                <mo>&#x00A8;</mo>
+            </msup>
+        </mrow>
+        <msup>
+            <mrow>
+                <mi>&#x03BD;</mi>
+                <mo>&#x02D9;</mo>
+            </mrow>
+            <mn>2</mn>
+        </msup>
+    </mfrac>
+</math>
+    
 
                             
                 
