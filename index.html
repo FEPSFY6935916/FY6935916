@@ -2,96 +2,103 @@
 
 <html>
 
-    <head>
-  <img src =download.png alt=Banner width=1200 height=300>
-    <h1><b>ENG0018 Computer Laboratory 2025/26</b><h1>
-    <h2>Student URN: 6935916</h2>
-  <hr>
-  <h2 style=”font-family:calibri:”><b>Conference paper: Time keeping With Pulsars</b></h2>
-  <hr>
-        
-‹!style for tables›
- <style>
-table {
- font-family:arial,sans-serif
-    border collapse: collapse;
-    width:30%;
+<head>
 
-}
+  <meta charset="UTF-8">
+  <title>ENG0018 Conference Paper</title>
 
-     td,th {
-     border:1px solid #dddddd
-     text-allign: left;
-     padding: 8px;
+  <!-- Your table styling -->
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 30%;
     }
 
-     tr:nth-child(even) {
-         background-color: #dddddd
-     }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
 
+    p.ex1 {
+      margin-left: 250px;
+    }
 
+    pre {
+      white-space: pre-wrap; 
+    }
+  </style>
 
-    </style>
-        
+</head>
 
-        <style>
-        p.ex1 {
-         margin-left: 250px;
-        }
-        </style>    
-        <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color:white; margin-left:50px;">
 
-</style>
+<!-- School banner -->
+<img src="download.png" alt="Banner" width="1200" height="300">
 
-<body style="background-color:#FFFFFF;margin-left:50px;">
- <hr>
-<!-- TABLE OF CONTENTS (single-column table with links) -->
-<p class="ex1">
-  <table>
-    <tr>
-      <th><h3>Table of contents</h3></th>
-    </tr>
-    <tr>
-      <td><a href="#Abstract">Abstract</a></td>
-    </tr>
-    <tr>
-      <td><a href="#Introduction">Introduction</a></td>
-    </tr>
-    <tr>
-      <td><a href="#AnalysisDiscussion">Analysis and discussion</a></td>
-    </tr>
-    <tr>
-      <td><a href="#Conclusion">Conclusion</a></td>
-    </tr>
-    <tr>
-      <td><a href="#References">References</a></td>
-    </tr>
-  </table>
-</p>
+<!-- Module title + URN -->
+<h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
+<h2>Student URN: 6935916</h2>
 
 <hr>
 
-<!-- ABSTRACT -->
-<h3 id="Abstract">Abstract</h3>
-<p class="ex1">
-<pre>
+<!-- ARTICLE TITLE -->
+<h2 style="font-family:calibri;"><b>Conference paper: Time keeping With Pulsars</b></h2>
+
+<hr>
+  <!-- TABLE OF CONTENTS (single-column table with links) -->
+  <p class="ex1">
+    <table>
+      <tr>
+        <th><h3>Table of contents</h3></th>
+      </tr>
+      <tr>
+        <td><a href="#Abstract">Abstract</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Introduction">Introduction</a></td>
+      </tr>
+      <tr>
+        <td><a href="#AnalysisDiscussion">Analysis and discussion</a></td>
+      </tr>
+      <tr>
+        <td><a href="#Conclusion">Conclusion</a></td>
+      </tr>
+      <tr>
+        <td><a href="#LineChart">Line chart</a></td>
+      </tr>
+      <tr>
+        <td><a href="#References">References</a></td>
+      </tr>
+    </table>
+  </p>
+
+  <hr>
+
+  <!-- ABSTRACT -->
+  <h3 id="Abstract">Abstract</h3>
+  <p class="ex1">
+    <pre>
 Pulsars are neutron stars that emit very regular pulses of radiation, allowing scientists to measure
 time with high accuracy. Some pulsars, especially millisecond pulsars, are extremely stable and act
 as natural clocks in space. <mark>This article explains how pulsar timing works, how pulsar signals
 can be combined into a time scale, how they compare with atomic clocks, and how recent research
 uses both pulsars and atomic data together.</mark> Four academic sources support the discussion.
-</pre>
-</p>
+    </pre>
+  </p>
 
-<hr>
+  <hr>
 
-<!-- INTRODUCTION -->
-<h3 id="Introduction">Introduction</h3>
-<p class="ex1">
-<pre>
+  <!-- INTRODUCTION -->
+  <h3 id="Introduction">Introduction</h3>
+  <!-- IMPORTANT: give this an ID for the word-count script -->
+  <p class="ex1" id="Introduction_InText">
+    <pre>
 Timekeeping is essential in science, navigation, computing, and communication systems. Atomic
 clocks are currently the most accurate devices for measuring time, but they can still drift slightly over
 many years. For this reason, scientists have investigated the use of pulsars as natural timekeepers.
@@ -103,35 +110,39 @@ This article summarises four scientific studies showing how pulsars can measure 
 time scales are created, how pulsars compare with atomic clocks, and how new research aims to
 combine the strengths of both systems.
 </div>
-</pre>
-</p>
+    </pre>
+  </p>
 
-<hr>
+  <hr>
 
-<!-- ANALYSIS AND DISCUSSION -->
-<h3 id="AnalysisDiscussion">Analysis and discussion</h3>
-<p class="ex1">
-<pre>
+  <!-- ANALYSIS AND DISCUSSION -->
+  <h3 id="AnalysisDiscussion">Analysis and discussion</h3>
+  <!-- IMPORTANT: give this an ID for the word-count script -->
+  <p class="ex1" id="Analysis_InText">
+    <pre>
 Becker (2018) explains that pulsar timing works by predicting when a pulse should arrive and
 comparing this with the actual time measured at the telescope. Factors such as interstellar gas,
 relativity, and observatory clock corrections must be accounted for. When these effects are included,
 the remaining differences, known as timing residuals, are small and mostly random. This shows that
 pulsars can behave as long-term natural clocks. (Referenced in lines 33–55)
-</pre>
+    </pre>
+  </p>
 
-<!-- MathML equation 1: t_obs = t_model + R(t) -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <msub><mi>t</mi><mi>obs</mi></msub>
-    <mo>=</mo>
-    <msub><mi>t</mi><mi>model</mi></msub>
-    <mo>+</mo>
-    <mi>R</mi><mo>(</mo><mi>t</mi><mo>)</mo>
-  </mrow>
-</math>
+  <!-- MathML equation 1: t_obs = t_model + R(t) -->
+  <p class="ex1">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+        <msub><mi>t</mi><mi>obs</mi></msub>
+        <mo>=</mo>
+        <msub><mi>t</mi><mi>model</mi></msub>
+        <mo>+</mo>
+        <mi>R</mi><mo>(</mo><mi>t</mi><mo>)</mo>
+      </mrow>
+    </math>
+  </p>
 
-<p class="ex1">
-<pre>
+  <p class="ex1">
+    <pre>
 This simple equation shows that the observed pulse time is equal to the model prediction plus a
 residual term, which is small for a stable pulsar.
 
@@ -140,26 +151,29 @@ pulsar-based time scale. Averaging the timing data reduces random noise and prod
 long-term signal. Their work produced the pulsar time scale TT(IPTA16), which is accurate enough to
 compare with international atomic time and detect slow changes in atomic clocks. (Referenced in
 lines 57–80)
-</pre>
+    </pre>
+  </p>
 
-<!-- MathML equation 2: T_PSR(t) = (1/N) Σ R_i(t) -->
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <msub><mi>T</mi><mi>PSR</mi></msub>
-    <mo>(</mo><mi>t</mi><mo>)</mo>
-    <mo>=</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mi>N</mi>
-    </mfrac>
-    <mo>&#x2211;</mo>
-    <msub><mi>R</mi><mi>i</mi></msub>
-    <mo>(</mo><mi>t</mi><mo>)</mo>
-  </mrow>
-</math>
+  <!-- MathML equation 2: T_PSR(t) = (1/N) Σ R_i(t) -->
+  <p class="ex1">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+        <msub><mi>T</mi><mi>PSR</mi></msub>
+        <mo>(</mo><mi>t</mi><mo>)</mo>
+        <mo>=</mo>
+        <mfrac>
+          <mn>1</mn>
+          <mi>N</mi>
+        </mfrac>
+        <mo>&#x2211;</mo>
+        <msub><mi>R</mi><mi>i</mi></msub>
+        <mo>(</mo><mi>t</mi><mo>)</mo>
+      </mrow>
+    </math>
+  </p>
 
-<p class="ex1">
-<pre>
+  <p class="ex1">
+    <pre>
 This equation represents a simplified pulsar time scale where the average of the timing residuals
 from N pulsars is used as a stable reference signal.
 
@@ -173,15 +187,15 @@ Liu et al. (2023) propose combining pulsar observations with atomic clock signal
 time scale. In their system, pulsar data are used to correct slow drift in atomic clocks, while the atomic
 clocks still provide excellent short-term accuracy. This combined approach reduces long-term errors
 and may influence future international timekeeping standards. (Referenced in lines 107–135)
-</pre>
-</p>
+    </pre>
+  </p>
 
-<hr>
+  <hr>
 
-<!-- CONCLUSION -->
-<h3 id="Conclusion">Conclusion</h3>
-<p class="ex1">
-<pre>
+  <!-- CONCLUSION -->
+  <h3 id="Conclusion">Conclusion</h3>
+  <p class="ex1">
+    <pre>
 Pulsars offer an effective way to support long-term timekeeping because their pulses are stable and
 predictable. By understanding and correcting pulsar timing data, scientists can treat pulsars as
 natural clocks. When timing data from multiple pulsars are combined, a stable pulsar-based time
@@ -189,15 +203,27 @@ scale can be created that complements atomic clocks. Research comparing the two 
 that atomic clocks provide excellent short-term precision, while pulsars provide long-term stability.
 Recent studies propose combining both, suggesting that the most accurate future timekeeping may
 use a hybrid pulsar–atomic approach.
-</pre>
-</p>
+    </pre>
+  </p>
 
-<hr>
+  <hr>
 
-<!-- REFERENCES -->
-<h3 id="References">References</h3>
-<p class="ex1">
-<pre>
+  <!-- LINE CHART SECTION (after conclusion, before references) -->
+  <h3 id="LineChart">Line chart</h3>
+  <p class="ex1">
+    Example line chart using Google Charts to demonstrate pulsar timing stability over time.
+  </p>
+  <div id="linechart_div" style="width:700px; height:400px;"></div>
+
+  <!-- This is where the total word count will be displayed (Intro + Analysis) -->
+  <p id="totalWordCount" class="ex1"></p>
+
+  <hr>
+
+  <!-- REFERENCES -->
+  <h3 id="References">References</h3>
+  <p class="ex1">
+    <pre>
 Becker, W., Kramer, M., &amp; Sesana, A. (2018). Pulsar Timing and Its Application for Navigation and
 Gravitational Wave Detection. Space Science Reviews, 214, 30.
 (Referenced in lines 33–55)
@@ -219,5 +245,110 @@ and atomic clocks based on Vondrak–Cepek filtering. Monthly Notices of the Roy
 Society, 521(2), 2553–2559.
 (Referenced in lines 107–135)
 <a href="https://academic.oup.com/mnras/article/521/2/2553/7071906">Link to source</a>
-</pre>
-</p>
+    </pre>
+  </p>
+
+  <!-- =================== LINE CHART SCRIPT =================== -->
+  <script>
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawLineChart);
+
+    function drawLineChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Time Stability'],
+        ['2019',  0.92],
+        ['2020',  0.95],
+        ['2021',  0.97],
+        ['2022',  0.98],
+        ['2023',  0.99]
+      ]);
+
+      var options = {
+        title: 'Example Line Chart: Pulsar Timing Stability Over Time',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(
+        document.getElementById('linechart_div')
+      );
+      chart.draw(data, options);
+    }
+  </script>
+
+  <!-- =================== LAST UPDATED (TIMESTAMP) =================== -->
+  <div id="last-updated" class="ex1">Loading last update time...</div>
+  <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+  </button>
+
+  <script>
+    async function getLastUpdatedTime() {
+      const username = 'nr0025';   // <- change if your GitHub username is different
+      const repo = 'FY0025';       // <- change if your repository name is different
+
+      const url = https://api.github.com/repos/${username}/${repo}/commits;
+      try {
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/vnd.github.v3+json',
+          }
+        });
+        if (!response.ok) {
+          throw new Error(Error fetching data: ${response.status} - ${response.statusText});
+        }
+        const commits = await response.json();
+        if (commits && commits.length > 0) {
+          const lastCommitDate = new Date(commits[0].commit.committer.date);
+          document.getElementById('last-updated').innerText =
+            Last Modified Time: ${lastCommitDate.toLocaleString()};
+        } else {
+          document.getElementById('last-updated').innerText =
+            'No commits found in the repository.';
+        }
+      } catch (error) {
+        console.error('Error fetching the last updated time:', error);
+        document.getElementById('last-updated').innerText =
+          'Error fetching update time. Please check the repository details.';
+      }
+    }
+
+    async function verifyLastUpdatedTime() {
+      document.getElementById('last-updated').innerText = 'Verifying...';
+      await getLastUpdatedTime();
+      alert("Last modified time has been successfully verified from GitHub API.");
+    }
+  </script>
+
+  <!-- =================== WORD COUNT SCRIPT =================== -->
+  <script>
+    // Count words in a section with a given id
+    function displayWordCount(sectionId) {
+      const element = document.getElementById(sectionId);
+      if (!element) return 0;
+      const text = element.textContent;
+      const wordArray = text.trim().split(/\s+/);
+      return text.trim() === '' ? 0 : wordArray.length;
+    }
+
+    // Calculate total word count for Introduction + Analysis
+    function displayTotalWordCount() {
+      const IntroductionCount = displayWordCount("Introduction_InText");
+      const AnalysisCount = displayWordCount("Analysis_InText");
+      const totalWordCount = IntroductionCount + AnalysisCount;
+      document.getElementById("totalWordCount").innerText =
+        Total word count (Introduction + Analysis): ${totalWordCount};
+    }
+
+    // When the page finishes loading, run both:
+    // - getLastUpdatedTime()
+    // - displayTotalWordCount()
+    window.addEventListener('load', function () {
+      getLastUpdatedTime();
+      displayTotalWordCount();
+    });
+  </script>
+
+</body>
+</html>
