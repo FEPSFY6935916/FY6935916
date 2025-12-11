@@ -117,12 +117,51 @@ comparing this with the actual time measured at the telescope. Factors such as i
 relativity, and observatory clock corrections must be accounted for. When these effects are included,
 the remaining differences, known as timing residuals, are small and mostly random. This shows that
 pulsars can behave as long-term natural clocks. (Referenced in lines 33–55)
+</pre>
+
+<!-- MathML equation 1: t_obs = t_model + R(t) -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msub><mi>t</mi><mi>obs</mi></msub>
+    <mo>=</mo>
+    <msub><mi>t</mi><mi>model</mi></msub>
+    <mo>+</mo>
+    <mi>R</mi><mo>(</mo><mi>t</mi><mo>)</mo>
+  </mrow>
+</math>
+
+<p class="ex1">
+<pre>
+This simple equation shows that the observed pulse time is equal to the model prediction plus a
+residual term, which is small for a stable pulsar.
 
 Hobbs et al. (2020) describe how timing data from multiple pulsars can be combined to create a
 pulsar-based time scale. Averaging the timing data reduces random noise and produces a stable
 long-term signal. Their work produced the pulsar time scale TT(IPTA16), which is accurate enough to
 compare with international atomic time and detect slow changes in atomic clocks. (Referenced in
 lines 57–80)
+</pre>
+
+<!-- MathML equation 2: T_PSR(t) = (1/N) Σ R_i(t) -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <msub><mi>T</mi><mi>PSR</mi></msub>
+    <mo>(</mo><mi>t</mi><mo>)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <mo>&#x2211;</mo>
+    <msub><mi>R</mi><mi>i</mi></msub>
+    <mo>(</mo><mi>t</mi><mo>)</mo>
+  </mrow>
+</math>
+
+<p class="ex1">
+<pre>
+This equation represents a simplified pulsar time scale where the average of the timing residuals
+from N pulsars is used as a stable reference signal.
 
 Matsakis and Foster (1996) compare pulsars with groups of atomic clocks. Atomic clocks are very
 accurate over short periods, such as seconds or minutes, but they can drift slightly over many years.
